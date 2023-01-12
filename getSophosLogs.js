@@ -1,23 +1,23 @@
-# step 1: inject jQuery 
+// step 1: inject jQuery 
 
 var script = document.createElement('script');
 script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js";
 document.getElementsByTagName('head')[0].appendChild(script);
 
-## step 2: get td
+// step 2: get td
 
 $("#pr_id_9-table td").each(function () {$(this).text}); 
 
-# step 3: what td need?
+// step 3: what td need?
 
 1: td#xgemail-messages-history-v2-sender-0.xgemail-table-cell-md
 2: td#xgemail-messages-history-v2-recipients-0.xgeamil-table-cell-sml
 4: td#xgemail-messages-history-v2-subject-0.xgeamil-table-cell-sml.xgemail-table-column-divider
 6: td#xgemail-messages-history-v2-date-0.xgemail-table-cell-s
 
-## step 4 - profit
+// step 4 - profit
 
-# sender
+// sender
 
 $(".xgemail-table-cell-md span").text().replace(/>/g, '>\n')
 
@@ -27,7 +27,7 @@ $(".xgemail-table-cell-md span").text(function(){
 	console.log(this.outerText);}
 });
 
-# recipient
+// recipient
 
 $(".xgeamil-table-cell-sml span").text(function(){
 	var this_row = $(this).text;
@@ -36,7 +36,7 @@ $(".xgeamil-table-cell-sml span").text(function(){
 });
 
 
-subject
+// subject
 
 $(".xgeamil-table-cell-sml a").text(function(){
 	var this_row = $(this).text;
@@ -44,7 +44,8 @@ $(".xgeamil-table-cell-sml a").text(function(){
 });
 
 
-Date
+// date
+
 $(".xgemail-table-cell-s span").text(function(){
 	var this_row = $(this).text;
 	if(this.outerText.includes("DATE")){} else {
