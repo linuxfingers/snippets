@@ -5,4 +5,4 @@ then
 	exit 1
 fi
 
-yum update 1>/dev/null 2>>/root/logs/sys-update.log
+yum update 1>/dev/null 2>>/root/logs/bupdate.log
