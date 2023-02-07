@@ -3,7 +3,7 @@ Description=update system
 After=multi-user.target
 
 [Service]
-ExecStart=/usr/bin/bash /root/.scripts/bupdate.sh
+ExecStart=/bin/bash /root/.scripts/bupdate.sh
 Type=simple
 
 [Install]
