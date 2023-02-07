@@ -1,0 +1,9 @@
+[Unit]
+Description=update system
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/bash /root/.scripts/sys-update.sh
+
+[Install]
+WantedBy=multi-user.target
