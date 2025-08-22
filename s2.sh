@@ -1,29 +1,29 @@
 #!/bin/bash
 
 #################################################################################
-#										#
-# Title: 	S2 Ingestion Script						#
-# Author: 	Eva Gamma Mead							#
-# Date: 	2025-08-21							#
-#										#
-# Purpose: 	Creates an ingestible CSV from a lean list for a LenelS2	#
-# 		System that uses a HID Corporate 1000 credential format.	#
-#										#
+#                                                            										#
+# Title: 	  S2 Ingestion Script						                                      #
+# Author: 	Eva Gamma Mead							                                        #
+# Date: 	  2025-08-21							                                            #
+#										                                                            #
+# Purpose: 	Creates an ingestible CSV from a lean list for a LenelS2	          #
+# 		      System that uses a HID Corporate 1000 credential format.	          #
+#										                                                            #
 # ###############################################################################
-#										#
-# Lean List Example:								#
-# 										#
-# 	LASTNAME,FIRSTNAME,PORTALS,NUMBER,EMAIL					#
-# 	Langley,Richard,IT;Server,101337,langley@thelonegunman.info             #
-#										#
-# LASTNAME	Employee's full last name					#
-# FIRSTNAME	Employee'd full first name					#
-# PORTALS 	Shorthand access levels - see ACCESS_MAP for details		#
-# NUMBER	HID number provided by Security Office				#
-# EMAIL		Employee's email address					#
-#										#
-# ACCESS_MAP	Assign shorthand portals to portals as provisioned in S2	#
-#										#
+#										                                                            #
+# Lean List Example:								                                            #
+# 										                                                          #
+# 	LASTNAME,FIRSTNAME,PORTALS,NUMBER,EMAIL					                            #
+# 	Langley,Richard,IT;Server,101337,langley@thelonegunman.info                 #
+#										                                                            #
+# LASTNAME	Employee's full last name					                                  #
+# FIRSTNAME	Employee'd full first name					                                #
+# PORTALS 	Shorthand access levels - see ACCESS_MAP for details		            #
+# NUMBER	  HID number provided by Security Office				                      #
+# EMAIL		  Employee's email address					                                  # 
+#										                                                            #
+# ACCESS_MAP	Assign shorthand portals to portals as provisioned in S2	        #
+#										                                                            #
 #################################################################################
 
 set -euo pipefail
